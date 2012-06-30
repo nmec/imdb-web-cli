@@ -447,11 +447,11 @@ h1, h2, h3, h4, h5, h6, p, input {
 	width: 90%;
 }
 
-.submit {
+.submit,
+.output,
+.tomatoes,
+#tomatoes {
 	display: none;
-}
-
-.output {
 }
 
 .output dt {

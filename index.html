@@ -16,45 +16,59 @@
 	<!--[if lt IE 7]><p class="chromeframe">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
 	<header id="header">
-		<h1 class="site-title">IMDB CLI v0.1</h1>
+		<h1 class="site-title">IMDb CLI v0.1</h1>
 		<h2>Powered by the (unofficial) IMDB API - <a href="http://www.imdbapi.com/">imdbapi.com</a></h2>
 		--------------------------------------------------
 	</header>
 
 	<div class="output">
 		<dl class="results">
-			<dt>Title</dt>
-			<dd class="title"></dd>
-			
-			<dt>Starring</dt>
-			<dd class="starring"></dd>
+			<section id="imdb">
+				<dt>Title</dt>
+				<dd class="title"></dd>
+				
+				<dt>Starring</dt>
+				<dd class="starring"></dd>
+				
+				<dt>Director</dt>
+				<dd class="director"></dd>
+				
+				<dt>Writer</dt>
+				<dd class="writer"></dd>
+				
+				<dt>Genre</dt>
+				<dd class="genre"></dd>
+				
+				<dt>Plot</dt>
+				<dd class="plot"></dd>
+				
+				<dt>Length</dt>
+				<dd class="length"></dd>
+				
+				<dt>Rated</dt>
+				<dd class="rated"></dd>
+				
+				<dt>Released</dt>
+				<dd class="released"></dd>
+				
+				<dt class="imdb">IMDb Rating</dt>
+				<dd class="imdb">
+					<span class="imdb-rating"></span> / 10 from <span class="imdb-votes"></span> votes
+				</dd>
+			</section>
+			<section id="tomatoes">
+				<dt>Rotten Tomatoes Consensus</dt>
+				<dd class="tomato-consensus"></dd>
 
-			<dt>Director</dt>
-			<dd class="director"></dd>
+				<dt>Tomatometer</dt>
+				<dd class="tomatometer"><span></span>%</dd>
 
-			<dt>Writer</dt>
-			<dd class="writer"></dd>
-
-			<dt>Genre</dt>
-			<dd class="genre"></dd>
-
-			<dt>Plot</dt>
-			<dd class="plot"></dd>
-
-			<dt>Length</dt>
-			<dd class="length"></dd>
-
-			<dt>Rated</dt>
-			<dd class="rated"></dd>
-
-			<dt>Released</dt>
-			<dd class="released"></dd>
-
-			<dt>IMDb Rating</dt>
-			<dd class="imdb">
-				<span class="imdb-rating"></span> / 10 from <span class="imdb-votes"></span> votes
-			</dd>
-		--------------------------------------------------
+				<dt>Rotten Tomato User rating</dt>
+				<dd class="tomato">
+					<span class="tomato-user-rating"></span> / 5 from <span class="tomato-user-votes"></span> votes
+				</dd>
+			</section>
+			--------------------------------------------------
 		</dl>
 	</div>
 
