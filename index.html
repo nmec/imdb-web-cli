@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>IMDB CLI</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/vendor/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+
+	<!--[if lt IE 7]><p class="chromeframe">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+	<header id="header">
+		<h1 class="site-title">IMDB CLI v0.1</h1>
+		<h2>Powered by the (unofficial) IMDB API - <a href="http://www.imdbapi.com/">imdbapi.com</a></h2>
+		--------------------------------------------------
+	</header>
+
+	<div class="output">
+		<dl class="results">
+			<dt>Title</dt>
+			<dd class="title"></dd>
+			
+			<dt>Starring</dt>
+			<dd class="starring"></dd>
+
+			<dt>Director</dt>
+			<dd class="director"></dd>
+
+			<dt>Writer</dt>
+			<dd class="writer"></dd>
+
+			<dt>Genre</dt>
+			<dd class="genre"></dd>
+
+			<dt>Plot</dt>
+			<dd class="plot"></dd>
+
+			<dt>Length</dt>
+			<dd class="length"></dd>
+
+			<dt>Rated</dt>
+			<dd class="rated"></dd>
+
+			<dt>Released</dt>
+			<dd class="released"></dd>
+		--------------------------------------------------
+		</dl>
+	</div>
+
+	<form id="input">
+		$
+		<input class="input" type="text" placeholder="Movie name">
+		<input class="submit" value="Enter" type="submit">
+	</form>
+
+	<a href="https://github.com/nmec/imdb-web-cli"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
+
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-33057547-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	</script>
+
+</body>
+</html>
