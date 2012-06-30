@@ -53,5 +53,7 @@ function callback(data) {
 		$('.length').html(data.Runtime);
 		$('.rated').html(data.Rated);
 		$('.released').html(data.Released);
+		$('.imdb-rating').html(data.imdbRating);
+		$('.imdb-votes').html(data.imdbVotes);
 	}
 }
