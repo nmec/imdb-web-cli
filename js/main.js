@@ -18,10 +18,6 @@ function resetInput() {
 	searchInput.val(null);
 }
 
-// function moveInput() {
-// 	$('.results').after($('#input'));
-// }
-
 function goGoAjax() {
 	var searchTerm = searchInput.val();
 	
@@ -44,7 +40,6 @@ function callback(data) {
 	} else {
 		log(data);
 		$('.output').show();
-		// moveInput();
 		resetInput();
 		focusInput();
 		$('.title').html(data.Title);		
